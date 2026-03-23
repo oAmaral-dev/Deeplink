@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Abrindo app...</title>
+
+  <script>
+    // tenta abrir o app
+    window.location.href = "trix://";
+
+    // fallback (caso não tenha o app)
+    setTimeout(() => {
+      window.location.href = "https://seusite.com"; // ou loja do app
+    }, 2000);
+  </script>
+</head>
+<body>
+  <p>Abrindo aplicativo...</p>
+</body>
+</html>
